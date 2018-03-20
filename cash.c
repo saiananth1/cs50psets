@@ -4,18 +4,19 @@
 
 int main(void)
 {
-    float change;
+    float cash;
+
     //Promts user for value and checks for constraints
     do
     {
-        change = get_float("Number: ");
+        cash = get_float("Number: ");
     }
-    while (change < 0);
+    while (cash < 0);
 
-    //Convert float to int and rounding
-    int cash = round(change);
+    //Convert float to int
     int n = cash * 100, c = 0;
-   
+    cash = round(cash);
+
     //Main Algorithm
     while (n >= 25)
     {
