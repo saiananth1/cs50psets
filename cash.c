@@ -15,7 +15,6 @@ int main(void)
 
     //Convert float to int
     int n = cash * 100, c = 0;
-    cash = round(cash);
 
     //Main Algorithm
     while (n >= 25)
